@@ -15,31 +15,26 @@
 # data in text files (YAML, JSON).
 # If you have even more courage, try implementing user interface.
 
-class LessonScores:
+class  Student(object):
+
+    Student = []
+
+    def __init__(self, name,surname):
+        self.name = name
+        self.surname = surname
+        self.grades = []
+        self.add_student()
+
+    def add_student(self):
+        self.student.append(self.name,self.surname)
+        print('{} '.format(self.name,self.surname))
 
 
-def getAverageScoreClass(lab,project):
-    average=lab*0.4+project*0.6
-    print "Avrerage:",average
+    def add_grades(self, grades):
+        self.grades.append(grade)
 
-
-def getTotalAvaregeScore:
-  #
-  #
-
-
-def getStudentName:
-
-
-getCountAttendance:
-
-
-
-def main();
-   student_Name = input("Please eneter the student Name:")
-   surname = input("Please eneter the surname:")
-   lab = int(raw_input("Please enter the lab score"))
-   project = int(raw_input("Please enter the project score:"))
-   average(lab,project)
+    def averageCalculate(self):
+        average=self.lab*0.4+self.project*0.6
+        return average
 
 
