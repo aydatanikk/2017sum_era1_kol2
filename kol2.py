@@ -18,7 +18,7 @@
 import json
 class  Course(object):
 
-     def __init__(self):
+    def __init__(self):
         self.information{}
         
     def add_student(self, name,surname):
