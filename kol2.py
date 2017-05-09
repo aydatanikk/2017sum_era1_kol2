@@ -15,26 +15,23 @@
 # data in text files (YAML, JSON).
 # If you have even more courage, try implementing user interface.
 
-class  Student(object):
+import json
+class  Course(object):
 
-    Student = []
+     def __init__(self):
+        self.information{}
+        
+    def add_student(self, name,surname):
+    self.information[name]=[surname,0,[]]
+    
+    def add_grade(self,name,surname,grade ):
+        self.information[surname].append(grade)
+        
+    def add_attendance(self,name,surname):
+        self.information[name][surname]
 
-    def __init__(self, name,surname):
-        self.name = name
-        self.surname = surname
-        self.grades = []
-        self.add_student()
-
-    def add_student(self):
-        self.student.append(self.name,self.surname)
-        print('{} '.format(self.name,self.surname))
 
 
-    def add_grades(self, grades):
-        self.grades.append(grade)
 
-    def averageCalculate(self):
-        average=self.lab*0.4+self.project*0.6
-        return average
 
 
