@@ -16,19 +16,48 @@
 # If you have even more courage, try implementing user interface.
 
 import json
+
 class  Course(object):
 
     def __init__(self):
-        self.information{}
+        self.information={}
+        self.cont=0
         
     def add_student(self, name,surname):
-    self.information[name]=[surname,0,[]]
+        self.information[name]=[surname,0,[]]
     
-    def add_grade(self,name,surname,grade ):
+    def add_grade(self,surname,grade ):
         self.information[surname].append(grade)
         
     def add_attendance(self,name,surname):
         self.information[name][surname]
+
+    def get_average_grade(self, student):
+        sum=0
+        self.cont+=1
+        for grade in self.information[][student]:
+            sum= sum+grade
+        sum=sum/len(self.information[][student])
+        return sum
+    
+    def average_Grade_Students(self,student):
+        sum=0
+        for st in self.information[]:
+            sum=sum+self.get_average_grade(information, std)
+        return sum/len(self.information[])
+        
+    def get_json(self):
+        with open('strings.json') as json_data:
+        d = json.load(json_data)
+        print(d)
+        
+    def init_from_json(self):
+        with open('strings.json') as data_file:
+        self.information=json.load(data_file)
+        pass   
+    
+            
+        
 
 
 
