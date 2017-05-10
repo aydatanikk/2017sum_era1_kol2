@@ -43,7 +43,7 @@ class  Course(object):
     def average_Grade_Students(self,student):
         sum=0
         for st in self.information[]:
-            sum=sum+self.get_average_grade(information, std)
+            sum=sum+self.get_average_grade(information, st)
         return sum/len(self.information[])
         
     def get_json(self):
